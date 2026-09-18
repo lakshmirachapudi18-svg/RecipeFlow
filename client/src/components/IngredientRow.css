@@ -1,0 +1,139 @@
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color var(--transition-fast);
+}
+
+.ingredient-row.ingredient-checked {
+  opacity: 0.65;
+  background-color: var(--surface-hover);
+}
+
+.ingredient-row.ingredient-checked .ingredient-name {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.ingredient-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background-color: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.ingredient-checkbox:hover {
+  border-color: var(--accent);
+}
+
+.ingredient-checkbox.checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.ingredient-row:last-child {
+  border-bottom: none;
+}
+
+.ingredient-row:hover {
+  background-color: var(--surface-hover);
+}
+
+.ingredient-info {
+  flex: 1;
+}
+
+.ingredient-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.ingredient-qty-unit {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.ingredient-unit {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.ingredient-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-substitute {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background-color: rgba(213, 168, 79, 0.12);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(213, 168, 79, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.btn-substitute:hover {
+  background-color: rgba(213, 168, 79, 0.25);
+}
+
+.btn-add-single {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background-color: var(--surface-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  transition: all var(--transition-fast);
+}
+
+.btn-add-single:hover {
+  background-color: var(--accent);
+  color: [data-theme="dark"] ? #0B0F0E : #FFFFFF;
+  border-color: var(--accent);
+}
+
+[data-theme="dark"] .btn-add-single:hover {
+  color: #0B0F0E;
+}
+
+[data-theme="light"] .btn-add-single:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 540px) {
+  .ingredient-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .ingredient-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.25rem;
+  }
+}

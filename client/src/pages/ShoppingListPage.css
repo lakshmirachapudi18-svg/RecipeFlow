@@ -1,0 +1,23 @@
+.shopping-page {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  max-width: 860px;
+}
+
+.shopping-page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.shopping-page-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.shopping-page-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}

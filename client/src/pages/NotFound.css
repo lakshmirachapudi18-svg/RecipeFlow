@@ -1,0 +1,39 @@
+.not-found-page {
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.not-found-card {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.not-found-icon {
+  color: var(--accent);
+}
+
+.not-found-code {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--accent-secondary);
+  line-height: 1;
+}
+
+.not-found-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.not-found-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
